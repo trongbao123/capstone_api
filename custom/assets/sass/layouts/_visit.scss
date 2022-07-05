@@ -1,0 +1,75 @@
+.Studio {
+    background-color: $color-white-2;
+    height: 500px;
+    h3 {
+        font-family: fantasy;
+        @include styleText($fs-7, $fw-1, $color-yellow-2);
+        text-align: center;
+        margin-top: $mg-3;
+    }
+
+    .line__left {
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color: $color-yellow-2;
+            position: relative;
+            top: $mg-3+22;
+            left: $pd-8;
+        }
+      
+    }
+
+    .line__right{
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color: $color-yellow-2;
+            position: relative;
+            top: -30px;
+            left: 628px;
+        }
+    }
+
+    .icon{
+        text-align: center;
+        color: $color-yellow-2;
+        position: relative;
+        bottom: $fs-7;
+    }
+
+    .card{
+        .card__body{
+            img{
+                width: 100%;
+                height: $pd-2;
+                object-fit: cover;
+                background-position: center;
+            }
+        }
+
+      
+    }
+
+    .col-4{
+        p{
+            position: relative;
+            bottom: 150px;
+            left: 150px;
+            font-size: 20px;
+            color: white;
+            font-weight: 400;
+        
+        }
+    }
+
+    .card__body{
+      
+            &:hover{
+                background-color: $color-dark-1;
+            }
+        
+    }
+
+    
+}

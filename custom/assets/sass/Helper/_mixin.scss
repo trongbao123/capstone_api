@@ -1,0 +1,33 @@
+@mixin styleText($fs,$fw,$color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin  styleButton($py,$px,$bg,$bd) {
+    padding: $py , $px;
+    background-color: $bg;
+    border: $bd;
+    height: $pd-7;
+    width: 25%;
+    border-radius: $bd-1+3;
+}
+
+@mixin  styleButtonhover($bg,$bd,$color) {
+    background: $bg;
+    border-color: $bd;
+    color: $color;
+}
+@mixin  Reponsive($screen) {
+    @if(map-has-key($map:$breakpoints, $key:$screen )){
+        // tìm thấy màn hình
+        $value:map-get($map: $breakpoints, $key:$screen );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else{
+        // ko tìm thấy
+        @error "screen doesn't exist"
+    }
+}

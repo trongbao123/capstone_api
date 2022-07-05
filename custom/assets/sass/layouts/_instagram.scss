@@ -1,0 +1,72 @@
+.Instagram{
+    background-color: $color-white-4;
+    height: 600px;
+    margin-top: -66px;
+    h3 {
+        font-family: fantasy;
+        @include styleText($fs-7, $fw-1, $color-yellow-2);
+        text-align: center;
+        margin-top: $mg-3;
+    }
+
+    .line__left {
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color: $color-yellow-2;
+            position: relative;
+            top: $mg-3+22;
+            left: $pd-8;
+        }
+      
+    }
+
+    .line__right{
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color: $color-yellow-2;
+            position: relative;
+            top: -30px;
+            left: 628px;
+        }
+    }
+
+    .icon{
+        text-align: center;
+        color: $color-yellow-2;
+        position: relative;
+        bottom: $fs-7;
+    }
+
+    .card{
+        text-align: center;
+        h5{
+            font-size: $mg-2;
+            font-weight: $fw-2;
+            color: $color-yellow-2;
+            font-family: ui-serif;
+        }
+        p{
+            font-size: $fs-7;
+            font-weight: $fw-2;
+            color: $color-yellow-2;
+            font-family: ui-serif;
+        }
+    }
+
+    .card-body{
+        a{
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 65%;
+            line-height: $mg-1;
+            color: $color-brown-1;
+            border: $color-brown-1 solid 1px;
+            &:hover {
+                @include styleButtonhover($color-brown-1, $color-white-3, $color-white-3)
+            }
+        }
+    }
+}

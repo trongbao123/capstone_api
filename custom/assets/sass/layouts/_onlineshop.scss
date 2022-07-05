@@ -1,0 +1,55 @@
+.Online__Shop{
+    background-image: url(../../../assets/img/home1_slide1.webp);
+    height: 850px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    .online{
+        padding-top: $pd-7;
+    }
+    h3 {
+        font-family: fantasy;
+        @include styleText($fs-7, $fw-1, $color-white-1);
+        text-align: center;
+        margin-top: $mg-3;
+    }
+
+    h1{
+        font-family: fantasy;
+        @include styleText($fs-4, $fw-1, $color-white-1);
+        text-align: center;
+    }
+    .line__left {
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color: $color-white-1;
+            position: relative;
+            top: $mg-3+22;
+            left: $pd-8;
+        }
+      
+    }
+
+    .line__right{
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color:$color-white-1;
+            position: relative;
+            top: -30px;
+            left: 628px;
+        }
+    }
+
+    .icon{
+        text-align: center;
+        color: $color-white-1;
+        position: relative;
+        bottom: $fs-7;
+    }
+
+  
+ 
+}

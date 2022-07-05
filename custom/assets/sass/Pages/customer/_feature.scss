@@ -1,0 +1,45 @@
+.feature{
+    height: 800px;
+    h1{
+        text-align: center;
+        @include styleText($fs-8,$fw-2,$color-dark-2);
+        padding-bottom: $pd-1;
+    }
+    .card-body{
+        background-color: $color-white-5;
+        h5{
+            text-align: center;
+            margin-top: $bd-2+10;
+            @include styleText($fs-7,$fw-1,$color-brown-1);
+        }
+    }
+
+    .card__mid{
+        justify-content: space-between;
+        margin-top: $pd-3+25;
+      
+        p{
+            @include styleText($fs-7,$fw-2,$color-brown-1);
+        }
+        a{
+                text-decoration: none;
+                @include styleText($fs-7,$fw-1,$color-brown-1);
+        }
+    }
+
+    .card__bot{
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: $pd-2;
+        }
+      
+    }
+    .card{
+        &:hover{
+            transform: scale(0.9);
+            transition: all .5s;
+        }
+    }
+   
+}

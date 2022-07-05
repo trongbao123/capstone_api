@@ -1,0 +1,27 @@
+.end{
+    height: $pd-8;
+    text-align: center;
+    background-color: $color-green-1;
+    font-size: $mg-1+5;
+    padding-top: $fs-8;
+    margin-top: $pd-8;
+   
+    .icon{
+        i{
+            padding: $bd-2;
+            border: solid white;
+            color: white;
+    
+            &:hover{
+                border: $color-brown-1 solid;
+                color: $color-brown-1;
+            }
+        }
+    }
+
+    .bottom__footer{
+        background-color: $color-white-5;
+        margin-top:$fs-8;
+        font-size: $bd-2+7;
+    }
+}

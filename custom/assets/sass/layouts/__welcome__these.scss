@@ -1,0 +1,61 @@
+.Welcome__There{
+    height: 800px;
+    h3 {
+        font-family: fantasy;
+        @include styleText($fs-7, $fw-1, $color-yellow-2);
+        text-align: center;
+        margin-top: $mg-3;
+    }
+
+    h1{
+        font-family: fantasy;
+        @include styleText($mg-1, $fw-1, $color-yellow-2);
+        text-align: center;
+    }
+    .line__left {
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color: $color-yellow-2;
+            position: relative;
+            top: $mg-3+22;
+            left: $pd-8;
+        }
+      
+    }
+
+    .line__right{
+        i{
+            width: 30%;
+            height: $bd-1;
+            background-color: $color-yellow-2;
+            position: relative;
+            top: -30px;
+            left: 628px;
+        }
+    }
+
+    .icon{
+        text-align: center;
+        color: $color-yellow-2;
+        position: relative;
+        bottom: $fs-7;
+    }
+
+    .carousel-inner{
+        height: $pd-2+300;
+        .carousel-item{
+            img{
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        margin-top: $pd-1+15;
+        @include styleText( $pd-3+5,$fw-2, $color-yellow-2);
+    }
+
+}
